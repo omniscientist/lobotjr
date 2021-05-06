@@ -929,6 +929,7 @@ namespace TwitchBot
                                                 int hungerToLose = RNG.Next(Pet.DUNGEON_HUNGER, Pet.DUNGEON_HUNGER + 6);
 
                                                 pet.affection -= Pet.DUNGEON_AFFECTION;
+                                                pet.hunger -= hungerToLose;
 
                                                 if (pet.hunger <= 0)
                                                 {
@@ -3640,7 +3641,7 @@ namespace TwitchBot
                                     }
                                 }
                             }
-                            // 
+                            //
                             //
                             //               COMMANDS TO FIX STUFF
                             //
